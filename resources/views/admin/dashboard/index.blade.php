@@ -3,7 +3,7 @@
 @section("page:styles")
 <!-- jvectormap -->
   <link rel="stylesheet" href="{{asset('assets/admin/plugins/jvectormap/jquery-jvectormap-1.2.2.css')}}">
-  {!! Charts::styles() !!}
+  {{-- {!! Charts::styles() !!} --}}
 @endsection
 @section("content")
  
@@ -76,10 +76,10 @@
                   <div class="chart">
                     <!-- Main Application (Can be VueJS or other JS framework) -->
                       <center>
-                        {!! $chart->html() !!}
+                      <div id="chart-container"></div>
                       </center>
                     <!-- End Of Main Application -->
-                    {!! Charts::scripts() !!}
+                    {{-- {!! Charts::scripts() !!} --}}
                     {!! $chart->script() !!}
                   </div>
                   <!-- /.chart-responsive -->

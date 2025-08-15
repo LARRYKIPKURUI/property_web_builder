@@ -6,10 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class PropertyType extends Model
 {
-    //
     protected $table = "property_types";
 
-    public function property() {
-        return $this->belongsTo(Property::class, "type_id", "id");
+    // This method now correctly defines the one-to-many relationship
+    public function properties() {
+        return $this->hasMany(Property::class, "type_id", "id");
     }
 }
