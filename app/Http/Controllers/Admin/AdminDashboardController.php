@@ -5,7 +5,6 @@ namespace App\Http\Controllers\Admin;
 use App\Models\Property;
 use App\Models\PropertyType;
 use App\Models\User;
-use ConsoleTVs\Charts\Classes\Chartjs\Chart; // Use the new class
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -23,15 +22,13 @@ class AdminDashboardController extends Controller
         $viewData['propertyCount'] = Property::all()->count();
 
         $propertyTypes = PropertyType::with('properties')->get();
-        $labels = $propertyTypes->pluck('title')->all();
-        $data = $propertyTypes->map(function ($type) {
+
+        // Manually JSON encode the data to ensure it's a valid string
+        $chartLabels = json_encode($propertyTypes->pluck('type')->all());
+        $chartData = json_encode($propertyTypes->map(function ($type) {
             return $type->properties->count();
-        })->all();
+        })->all());
 
-        $chart = new Chart();
-        $chart->labels($labels);
-        $chart->dataset('Property Types', 'bar', $data);
-
-        return view("admin.dashboard.index", $viewData, compact('chart'));
+        return view("admin.dashboard.index", $viewData, compact('chartLabels', 'chartData'));
     }
 }
