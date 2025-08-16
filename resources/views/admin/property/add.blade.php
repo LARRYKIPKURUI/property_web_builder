@@ -2,6 +2,16 @@
 @section("title", "Admin Add Properties")
 @section("content")
 
+@if ($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
+
  <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -289,6 +299,7 @@
   <!-- /.content-wrapper -->
 
 @endsection
+
 @section("page:scripts")
 
 <script>
@@ -315,49 +326,6 @@
            $("#rental_price").hide("fast");
        }
     });
-
-    $("#addProperty").on("submit", function(event) {
-        event.preventDefault();
-
-        if(!$("input[name='sale']").is(":checked") && !$("input[name='rental']").is(":checked")) {
-           showErrorAndNavigate("You have not specify either this property is for sale or rental", "#pricing-info-box"); 
-           return false; 
-        }
-
-        if( $("input[name='sale']").is(":checked") && !$("#current_selling_price").val() && !$("#original_selling_price").val()) {
-           showErrorAndNavigate("Current and Original Selling Price can not be zero though they can be the same", "#pricing-info-box"); 
-           return false; 
-        }
-         if( $("input[name='rental']").is(":checked") && !$("#current_rental_price").val() && !$("#original_rental_price").val()) {
-           showErrorAndNavigate("Current and Original Rental Price can not be zero though they can be the same", "#pricing-info-box"); 
-           return false; 
-        }
-
-        document.getElementById("addProperty").submit();
-        
-    });
-
-
   });
-
-  function showErrorAndNavigate(message, selector) {
-    //message to show
-    //selector to navigate to
-        swal({
-                title: "Error",
-                text: ""+message,
-                type: "error",
-                showCancelButton: false,
-                confirmButtonText: "OK",
-                showConfirmButton: true,
-                closeOnConfirm: false
-              },
-              function(){
-                swal.close();
-                $(document.body).animate({
-                  'scrollTop':   $(''+selector).offset().top
-                  }, 300);
-              });
-  }
 </script>
 @endsection

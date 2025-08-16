@@ -109,7 +109,8 @@ class AdminPropertyController extends Controller
              $property->country = $request->country;
              $property->postal_code = $request->postal_code;
 
-             $property = Property::create($property->toArray());
+            //  $property = Property::create($property->toArray());
+            $property->save();
             
             return redirect()->route("admin.property.edit", ["id" => $property->id])->with("success", "Property Created Successfully, Use the tab to add photos, features and change other settings.");
     	}
