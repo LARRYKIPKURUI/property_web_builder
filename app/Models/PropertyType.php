@@ -10,6 +10,6 @@ class PropertyType extends Model
 
     // This method now correctly defines the one-to-many relationship
     public function properties() {
-        return $this->hasMany(Property::class, "type_id", "id");
+        return $this->hasMany(Property::class, "property_type_id", "id");
     }
 }
