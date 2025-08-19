@@ -229,7 +229,7 @@
 <!-- FastClick -->
 <script src="{{asset('assets/admin/plugins/fastclick/fastclick.js')}}"></script>
 <!-- AdminLTE App -->
-<script src="{{asset('assets/admin/js/app.js')}}"></script>
+<script src="{{asset('assets/admin/js/app.v2.js')}}"></script>
 <!-- iCheck -->
 <script src="{{asset('assets/admin/plugins/iCheck/icheck.min.js')}}"></script>
 <!-- blockUI -->

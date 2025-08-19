@@ -63,23 +63,23 @@
             <li><a href="{{route('admin.currency.index')}}"><i class="fa fa-circle-o"></i> Currency</a></li>
           </ul>
         </li>
-        <li class="treeview">
-          <a href="#">
-            <i class="fa fa-book"></i>
-            <span>Site Contents</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="{{route('admin.contents.about')}}"><i class="fa fa-circle-o"></i> About Content</a></li>
-            <li><a href="{{route('admin.contents.terms_and_conditions')}}"><i class="fa fa-circle-o"></i> Terms and Conditions</a></li>
-            <li><a href="{{route('admin.contents.contact')}}"><i class="fa fa-circle-o"></i> Contact</a></li>
-            <li><a href="{{route('admin.contents.footer')}}"><i class="fa fa-circle-o"></i> Footer</a></li>
-            <li><a href="{{route('admin.contents.privacy_policy')}}"><i class="fa fa-circle-o"></i> Privacy Policy</a></li>
-            <li><a href="{{route('admin.contents.terms')}}"><i class="fa fa-circle-o"></i> Terms</a></li>
-            <li><a href="{{route('admin.contents.social_media')}}"><i class="fa fa-circle-o"></i> Social Media</a></li>
-          </ul>
+      <li class="treeview">
+            <a href="#">
+                <i class="fa fa-book"></i>
+                <span>Site Contents</span>
+                <span class="pull-right-container">
+                    <i class="fa fa-angle-left pull-right"></i>
+                </span>
+            </a>
+            <ul class="treeview-menu">
+                <li><a href="{{route('admin.contents.about')}}"><i class="fa fa-circle-o"></i> About Content</a></li>
+                <li><a href="{{route('admin.contents.terms_and_conditions')}}"><i class="fa fa-circle-o"></i> Terms and Conditions</a></li>
+                <li><a href="{{route('admin.contents.contact')}}"><i class="fa fa-circle-o"></i> Contact</a></li>
+                <li><a href="{{route('admin.contents.footer')}}"><i class="fa fa-circle-o"></i> Footer</a></li>
+                <li><a href="{{route('admin.contents.privacy_policy')}}"><i class="fa fa-circle-o"></i> Privacy Policy</a></li>
+                <li><a href="{{route('admin.contents.terms')}}"><i class="fa fa-circle-o"></i> Terms</a></li>
+                <li><a href="{{route('admin.contents.social_media')}}"><i class="fa fa-circle-o"></i> Social Media</a></li>
+            </ul>
         </li>
         @endif
         <li class="header">OPEN SOURCE</li>

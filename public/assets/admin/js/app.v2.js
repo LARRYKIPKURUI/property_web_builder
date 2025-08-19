@@ -434,8 +434,8 @@ function _init() {
             _this.layout.fix();
           });
         }
-        //if this isn't a link, prevent the page from being redirected
-        if (checkElement.is('.treeview-menu')) {
+        //If the menu is not visible, prevent the page from being redirected
+        if (checkElement.is('.treeview-menu') && $this.attr('href') == '#') {
           e.preventDefault();
         }
       });
