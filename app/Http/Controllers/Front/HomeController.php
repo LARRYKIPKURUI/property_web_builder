@@ -36,13 +36,13 @@ class HomeController extends Controller
 
 
     public function properties() {
-        $properties = Property::where("is_public", true)->latest()->get()->toArray();
-        Log::info("property count " . count($properties) );
-        return view("front.properties.index",
-            [
-                "properties" => $properties
-            ]);
-    }
+    $properties = Property::with('photos')->where("is_public", true)->latest()->get()->toArray();
+    Log::info("property count " . count($properties) );
+    return view("front.properties.index",
+        [
+            "properties" => $properties
+        ]);
+}
 
     public function detail($id) {
     $property = Property::with('photos')->findOrFail($id);

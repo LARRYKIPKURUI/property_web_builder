@@ -28,22 +28,18 @@
                   @for($j = 0; $j < 3; $j++)
                    @if($i >= count($properties)) @break @endif
                    <a href="{{route("front.properties.detail", ["id" => $properties[$i]['id']])}}">
-                    <div class="col-md-4 w3l_services_grid">
-                        <div class="w3ls_services_grid agileits_services_grid">
-                            <div class="agile_services_grid1_sub">
-                                <p>$ {{$properties[$i]['current_selling_price']}}</p>
-                            </div>
-                            <div class="agileinfo_services_grid_pos">
-                                <i class="fa fa-user-o" aria-hidden="true"></i>
-                            </div>
+                        <div class="col-md-4 w3l_services_grid">
+                            @if(count($properties[$i]['photos']) > 0)
+                                <img src="{{ asset($properties[$i]['photos'][0]['url']) }}" class="img-responsive" alt="{{$properties[$i]['title']}}">
+                            @else
+                                <img src="{{ asset('assets/front/images/default.jpg') }}" class="img-responsive" alt="No Image Available">
+                            @endif
+
+                            <div class="wthree_service_text">
+                                <h3>{{$properties[$i]['title']}}</h3>
+                                </div>
                         </div>
-                        <div class="wthree_service_text">
-                            <h3>{{$properties[$i]['title']}}</h3>
-                            <p>Location: {{$properties[$i]['street_address']}}, {{$properties[$i]['city']}}, {{$properties[$i]['region']}}</p>
-                            <a href="{{route("front.properties.detail", ["id" => $properties[$i]['id']])}}" class="w3_agileits_service">View Details</a>
-                        </div>
-                    </div>
-                   </a>
+                    </a>
                    <?php $i++; ?>
                   @endfor
                   </div>
