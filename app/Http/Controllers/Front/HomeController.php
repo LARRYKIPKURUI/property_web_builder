@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Front;
 
 use App\Models\Property;
+use App\Models\Subscriber; 
 use App\Models\PropertyType;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -116,5 +117,21 @@ class HomeController extends Controller
 
         return view("front.properties.index", ["properties" => $properties]);
 
+    }
+
+     public function subscribe(Request $request)
+    {
+        $this->validate($request, [
+            'name' => 'required|string|max:255',
+            'email' => 'required|email|unique:subscribers',
+        ]);
+
+        // Save the subscriber to the database
+        Subscriber::create([
+            'name' => $request->name,
+            'email' => $request->email
+        ]);
+
+        return redirect()->back()->with('success', 'You have been successfully subscribed!');
     }
 }

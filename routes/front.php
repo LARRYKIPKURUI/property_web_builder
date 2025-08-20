@@ -16,5 +16,7 @@ Route::group(["namespace" => "Front"], function () {
 
     Route::post("/properties/find", "HomeController@find")->name("front.properties.find");
 
+    Route::post('/subscribe', "HomeController@subscribe")->name("front.subscribe");
+
 
 });
