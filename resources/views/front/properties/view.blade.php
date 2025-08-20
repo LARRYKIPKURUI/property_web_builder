@@ -37,7 +37,7 @@
                     <p><strong>Current Rental Price:</strong> {{$property->currency->symbol}} {{$property->current_rental_price}}</p>
                     <br>
                 @endif
-                <p><strong>State:</strong> {{$property->state->state}} | <strong>Type:</strong> {{$property->type->type}}</p>
+                <p><strong>State:</strong> @if($property->state) {{$property->state->state}} @else N/A @endif | <strong>Type:</strong> {{$property->type->type}}</p>
                 <br>
                 <p><span class="fa fa-bath"></span> {{$property->bathroom_count}} | <span class="fa fa-bed"></span> {{$property->bedroom_count}} | <span class="fa fa-car"></span> {{$property->garage_count}}</p>
                 <br>
