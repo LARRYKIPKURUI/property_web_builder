@@ -78,7 +78,7 @@
                     <ul class="nav navbar-nav w3_agile_nav">
                         <li class="@if($active == "home") active @endif"><a href="{{route("front.index")}}"><span>Home</span></a></li>
                         <li class="@if($active == "properties") active @endif"><a href="{{route('front.properties')}}"><span>Properties</span></a></li>
-                        <li class="@if($active == "about") active @endif"><a href="#"><span>About Us</span></a></li>
+                        <li class="@if($active == "about") active @endif"><a href="{{ route('admin.contents.about') }}"><span>About Us</span></a></li>
                         <li><a href="#"><span>Contact Us</span></a></li>
                         @if(!Auth::check())
                             <li><a href="{{ url('/login') }}"><span>Register/Log In</span></a></li>
