@@ -134,4 +134,10 @@ class HomeController extends Controller
 
         return redirect()->back()->with('success', 'You have been successfully subscribed!');
     }
+
+    public function about()
+        {
+            return view('front.about');
+        }
+
 }

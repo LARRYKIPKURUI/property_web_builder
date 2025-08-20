@@ -211,7 +211,7 @@
     <div class="pull-right hidden-xs">
       <b>Version</b> 0.0.1
     </div>
-    <strong>Copyright &copy; <?php echo date('Y'); ?> <a href="#">Property Web Builder</a>.</strong> All rights
+    <strong>Copyright &copy; <?php echo date('Y'); ?> <a href="#">Asis Real Estate Limited</a>.</strong> All rights
     reserved.
   </footer>
 

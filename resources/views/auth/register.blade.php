@@ -5,7 +5,7 @@
 
 <div class="register-box">
   <div class="register-logo">
-     <a href="{{route('front.index')}}"><b>Admin</b> <br>Properties Web Builder</a>
+     <a href="{{route('front.index')}}"><b>Admin</b> <br>Asis Real Estate</a>
   </div>
    <br>
   @include("partials.alerts")

@@ -4,7 +4,7 @@
 @section("content")
 <div class="login-box">
   <div class="login-logo">
-   <a href="{{route('front.index')}}"><b>Admin</b> <br>Properties Web Builder</a>
+   <a href="{{route('front.index')}}"><b>Admin</b> <br>Asis Real Estate  </a>
   </div>
   <br>
   @include("partials.alerts")

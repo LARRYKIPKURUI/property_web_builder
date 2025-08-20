@@ -9,7 +9,8 @@
 <div class="banner-bottom">
     <div class="container">
         <div class="col-md-6 w3layouts_banner_bottom_left">
-            <h3>Find your dream Property. A Place your heart long for. Affordable properties for all</h3>
+            <h3>Connecting you to your dreamland. Finding a home you love shouldn't be a luxury. 
+                We're making it possible with affordable properties for everyone. </h3>
         </div>
         <div class="clearfix"> </div>
         <div class="w3_banner_bottom_pos">
@@ -61,7 +62,7 @@
                 <div class="col-md-4 w3l_services_grid">
                 <div class="w3ls_services_grid agileits_services_grid">
                     <div class="agile_services_grid1_sub">
-                        <p>For Rent</p>
+                        <p>Rented</p>
                     </div>
                     <div class="agileinfo_services_grid_pos">
                         <i class="fa fa-user-o" aria-hidden="true"></i>
@@ -85,7 +86,7 @@
                 <div class="col-md-4 w3l_services_grid">
                 <div class="w3ls_services_grid agileits_services_grid2">
                     <div class="agile_services_grid1_sub agileits_w3layouts_ser_sub1">
-                        <p>For Sale</p>
+                        <p>Sold</p>
                     </div>
                     <div class="agileinfo_services_grid_pos agile_services_grid_pos1">
                         <i class="fa fa-bath" aria-hidden="true"></i>
@@ -109,7 +110,7 @@
             <div class="col-md-4 w3l_services_grid">
                 <div class="w3ls_services_grid agileits_services_grid1">
                     <div class="agile_services_grid1_sub agileits_w3layouts_ser_sub">
-                        <p>Land</p>
+                        <p>Purchased</p>
                     </div>
                     <div class="agileinfo_services_grid_pos agile_services_grid_pos">
                         <i class="fa fa-home" aria-hidden="true"></i>
@@ -128,53 +129,6 @@
                     </ul>
                 </div>
             </div>
-
-            <div class="col-md-6 w3l_services_grid">
-                <div class="w3ls_services_grid agileits_services_grid3">
-                    <div class="agile_services_grid1_sub agileits_w3layouts_ser_sub2">
-                        <p>$ 23,543</p>
-                    </div>
-                    <div class="agileinfo_services_grid_pos agile_services_grid_pos2">
-                        <i class="fa fa-home" aria-hidden="true"></i>
-                    </div>
-                </div>
-                <div class="wthree_service_text">
-                    <h3>Featured Property</h3>
-                    <h4 class="w3_agileits_service3">Reality Agency</h4>
-                    <ul>
-                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                        <li><i class="fa fa-star-half-o" aria-hidden="true"></i></li>
-                        <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                        <li>(231)</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="col-md-6 w3l_services_grid">
-                <div class="w3ls_services_grid agileits_services_grid4">
-                    <div class="agile_services_grid1_sub agileits_w3layouts_ser_sub3">
-                        <p>$ 45,426</p>
-                    </div>
-                    <div class="agileinfo_services_grid_pos agile_services_grid_pos3">
-                        <i class="fa fa-home" aria-hidden="true"></i>
-                    </div>
-                </div>
-                <div class="wthree_service_text">
-                    <h3>Highly Featured Property</h3>
-                    <h4 class="w3_agileits_service4">Reality Agency</h4>
-                    <ul>
-                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                        <li><i class="fa fa-star-half-o" aria-hidden="true"></i></li>
-                        <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                        <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                        <li>(653)</li>
-                    </ul>
-                </div>
-            </div>
-
             <div class="clearfix"> </div>
         </div>
     </div>
@@ -184,15 +138,15 @@
     <div class="container">
         <div class="w3layouts_header w3_agile_head">
             <p><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span></p>
-            <h5>Subscribe to our <span>Newsletter</span></h5>
+            <!-- <h5>Subscribe to our <span>Newsletter</span></h5> -->
         </div>
         <div class="w3layouts_skills_grids w3l_newsletter_form">
-             <form action="{{ route('front.subscribe') }}" method="post">
+             <!-- <form action="{{ route('front.subscribe') }}" method="post">
                 @csrf
                 <input type="text" name="name" placeholder="Name" required="">
                 <input type="email" name="email" placeholder="Email" required="">
                 <input type="submit" value="Send">
-            </form>
+            </form> -->
         </div>
         <div class="w3ls_footer_grid">
             <div class="col-md-4 w3ls_footer_grid_left">
@@ -201,7 +155,7 @@
                 </div>
                 <div class="w3ls_footer_grid_leftr">
                     <h4>Location</h4>
-                    <p>Commercial Avenue, Sabo, Yaba, Lagos, Nigeria.</p>
+                    <p>P.o Box 326-30600</p>
                 </div>
                 <div class="clearfix"> </div>
             </div>
@@ -211,7 +165,7 @@
                 </div>
                 <div class="w3ls_footer_grid_leftr">
                     <h4>Email</h4>
-                    <a href="mailto:hello@prodsters.com">hello[at]prodsters.com</a>
+                    <a href="mailto:asisrealestate2020@gmail.com">asisrealestate2020@gmail.com</a>
                 </div>
                 <div class="clearfix"> </div>
             </div>
@@ -221,7 +175,7 @@
                 </div>
                 <div class="w3ls_footer_grid_leftr">
                     <h4>Call Us</h4>
-                    <p>(+234) 08109276123, (+234) 08088020249</p>
+                    <p>(+254) 728 744 524</p>
                 </div>
                 <div class="clearfix"> </div>
             </div>
