@@ -74,7 +74,7 @@
                         <li class="@if($active == "home") active @endif"><a href="{{route("front.index")}}"><span>Home</span></a></li>
                         <li class="@if($active == "properties") active @endif"><a href="{{route('front.properties')}}"><span>Properties</span></a></li>
                         <li class="@if($active == "about") active @endif"><a href="{{ route('front.about') }}"><span>About Us</span></a></li>
-                        <li><a href="#"><span>Contact Us</span></a></li>
+                        <li class="@if($active == "contact") active @endif"><a href="{{ route('front.contact') }}"><span>Contact Us</span></a></li>
                         @if(!Auth::check())
                             <li><a href="{{ url('/login') }}"><span>Register/Log In</span></a></li>
                         @else
