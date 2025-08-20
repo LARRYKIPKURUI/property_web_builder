@@ -259,9 +259,10 @@
             <h5>Subscribe to our <span>Newsletter</span></h5>
         </div>
         <div class="w3layouts_skills_grids w3l_newsletter_form">
-            <form action="#" method="post">
-                <input type="text" name="Name" placeholder="Name" required="">
-                <input type="email" name="Email" placeholder="Email" required="">
+            <form action="{{ route('front.subscribe') }}" method="post">
+                @csrf
+                <input type="text" name="name" placeholder="Name" required="">
+                <input type="email" name="email" placeholder="Email" required="">
                 <input type="submit" value="Send">
             </form>
         </div>

@@ -1,13 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: smatt
- * Date: 07/08/2017
- * Time: 01:03 PM
- */
 
-Route::group(["namespace" => "Front"], function () {
-
+Route::group(['middleware' => ['web'], 'namespace' => 'Front'], function () {
 
     Route::get('/', "HomeController@index")->name("front.index");
     Route::get('/properties', "HomeController@properties")->name("front.properties");
@@ -15,8 +8,6 @@ Route::group(["namespace" => "Front"], function () {
     Route::get("/properties/{id}", "HomeController@detail")->name("front.properties.detail");
 
     Route::post("/properties/find", "HomeController@find")->name("front.properties.find");
-
     Route::post('/subscribe', "HomeController@subscribe")->name("front.subscribe");
-
 
 });

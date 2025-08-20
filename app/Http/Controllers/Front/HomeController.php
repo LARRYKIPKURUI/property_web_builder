@@ -126,7 +126,7 @@ class HomeController extends Controller
             'email' => 'required|email|unique:subscribers',
         ]);
 
-        // Save the subscriber to the database
+        // Saving  the subscriber to the database
         Subscriber::create([
             'name' => $request->name,
             'email' => $request->email
