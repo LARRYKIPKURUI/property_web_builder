@@ -19,9 +19,9 @@
                         <h3 style="margin-top: 30px; margin-bottom: 20px;">What We Do</h3>
                         <p>We specialize in a wide range of real estate services, including:</p>
                         <ul style="margin-top: 20px;">
-                            <li style="margin-bottom: 10px;"><i class="fa fa-check" aria-hidden="true" style="margin-right: 10px;"></i> Property Sales: We offer a diverse portfolio of houses, apartments, and commercial properties for sale, catering to various budgets and preferences.</li>
-                            <li style="margin-bottom: 10px;"><i class="fa fa-check" aria-hidden="true" style="margin-right: 10px;"></i> Property Rentals: We provide comprehensive property management services to help clients find suitable rental properties.</li>
-                            <li style="margin-bottom: 10px;"><i class="fa fa-check" aria-hidden="true" style="margin-right: 10px;"></i> Land Sales: We deal in genuine, legally documented plots and farms, perfect for investment or development.</li>
+                            <li style="margin-bottom: 10px;"> Property Sales: We offer a diverse portfolio of houses, apartments, and commercial properties for sale, catering to various budgets and preferences.</li>
+                            <li style="margin-bottom: 10px;"> Property Rentals: We provide comprehensive property management services to help clients find suitable rental properties.</li>
+                            <li style="margin-bottom: 10px;"> Land Sales: We deal in genuine, legally documented plots and farms, perfect for investment or development.</li>
                         </ul>
                         
                         <div class="clearfix"></div>
