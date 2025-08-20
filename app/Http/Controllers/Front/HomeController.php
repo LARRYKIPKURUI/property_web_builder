@@ -45,14 +45,10 @@ class HomeController extends Controller
     }
 
     public function detail($id) {
-        $property = null;
+    $property = Property::with('photos')->findOrFail($id);
 
-        if(is_null($id) || is_null($property = Property::find($id)) ) {
-            return redirect()->back()->with("error", "We are sorry we can't find that property! try another one");
-        }
-
-        return view("front.properties.view", ["property" => $property]);
-    }
+    return view("front.properties.view", ["property" => $property]);
+}
 
     public function propertiesByType($type) {
         $properties = null;

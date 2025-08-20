@@ -53,10 +53,17 @@
             </div>
             <div class="col-sm-4">
                 <ul id="pictures">
-                    <li><img src="{{asset('assets/front/images/1.jpg')}}" class="img-responsive" alt=""/></li>
-                    <li><img src="{{asset('assets/front/images/2.jpg')}}" class="img-responsive" alt=""/></li>
-                    <li><img src="{{asset('assets/front/images/3.jpg')}}" class="img-responsive" alt=""/></li>
-                    <li><img src="{{asset('assets/front/images/4.jpg')}}" class="img-responsive" alt=""/></li>
+                    @if($property->photos->count())
+                        @foreach($property->photos as $photo)
+                            <li>
+                                <img src="{{ asset($photo->url) }}" class="img-responsive" alt="Property Image"/>
+                            </li>
+                        @endforeach
+                    @else
+                        <li>
+                            <img src="{{ asset('assets/front/images/default.jpg') }}" class="img-responsive" alt="No Image Available"/>
+                        </li>
+                    @endif
                 </ul>
             </div>
         </div>

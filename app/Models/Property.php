@@ -13,7 +13,7 @@ class Property extends Model
     protected $guarded = [];
 
     public function author() {
-    	return $this->belongsTo(User::class, "user_id", "id");
+        return $this->belongsTo(User::class, "user_id", "id");
     }
 
     public function type() {
@@ -26,5 +26,13 @@ class Property extends Model
 
     public function currency() {
         return $this->hasOne(Currency::class, "id", "currency_id");
+    }
+
+    /**
+     * Get the photos for the property.
+     */
+    public function photos()
+    {
+        return $this->hasMany('App\Models\Photo', 'property_id');
     }
 }
