@@ -82,20 +82,22 @@
                 
               </li>
               <!-- Menu Footer-->
-              <li class="user-footer">
-                <div class="pull-left">
+              <!-- <li class="user-footer"> -->
+                <!-- <div class="pull-left">
                   <a href="#" class="btn btn-default btn-flat">Profile</a>
-                </div>
-                <div class="pull-right">
-                  <a href="{{ route('logout') }}" onclick="event.preventDefault(); 
-                  document.getElementById('logout-form').submit();" class="btn btn-default btn-flat">
-                    Sign out
-                  </a>
-                  <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                      {{ csrf_field() }}
-                  </form>
-                </div>
-              </li>
+                </div> -->
+               <li class="user-footer">
+    <div class="text-center">
+        <a href="{{ route('logout') }}" onclick="event.preventDefault(); 
+        document.getElementById('logout-form').submit();" class="btn btn-default btn-flat">
+            Sign out
+        </a>
+        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+            {{ csrf_field() }}
+        </form>
+    </div>
+</li>
+
             </ul>
           </li>
           
