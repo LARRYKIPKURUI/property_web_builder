@@ -59,7 +59,7 @@
 <div class="banner-bottom">
     <div class="container">
         <div class="col-md-6 w3layouts_banner_bottom_left">
-            <h3>real estate investing, even on a very small scale, remains a tried and true
+            <h3>Real estate investing, even on a very small scale, remains a tried and true
                 means of building an individual's cash flow and wealth</h3>
         </div>
         <div class="clearfix"> </div>

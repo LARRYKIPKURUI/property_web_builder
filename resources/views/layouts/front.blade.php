@@ -7,8 +7,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="Tenements Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 
-    {{-- Favicon --}}
-    <link rel="icon" type="image/png" href="{{ asset('assets/front/images/favicon.png') }}">
+    <title>Asis Real Estate</title>
+   <link rel="icon" type="image/png" href="{{ asset('assets/front/images/favicon.png') }}">
 
     <link href="{{asset('assets/front/css/bootstrap.css')}}" rel="stylesheet" type="text/css" media="all" />
     <link href="{{asset('assets/front/css/style.css')}}" rel="stylesheet" type="text/css" media="all" />
