@@ -3,9 +3,22 @@
 @section("page:class", "register-page")
 @section("content")
 
+<style>
+  body.register-page {
+    background-color:  #f2f2f2; /* Sets the body background to white */
+  }
+  .register-box {
+    background-color: #ffffff; /* Sets the form background to a light grey */
+    padding: 20px; /* Adds padding to the form box */
+  }
+</style>
+
 <div class="register-box">
   <div class="register-logo">
-     <a href="{{route('front.index')}}"><b>Admin</b> <br>Asis Real Estate</a>
+    <a href="{{route('front.index')}}">
+      <img src="{{ asset('assets/client/images/logo.png') }}" alt="Asis Real Estate Logo" style="max-height: 100px; width: auto; display: block; margin: 0 auto;">
+    </a>
+    <h3 style="color: #666; text-align: center; margin-top: 10px;"> Register</h3>
   </div>
    <br>
   @include("partials.alerts")
@@ -40,23 +53,18 @@
         <div class="col-xs-8">
           <div class="checkbox icheck">
             <label>
-              <!-- <input type="checkbox"> I agree to the <a href="#">terms</a> -->
-            </label>
+              </label>
           </div>
         </div>
-        <!-- /.col -->
         <div class="col-xs-4">
           <button typ-e="submit" class="btn btn-primary btn-block btn-flat">Register</button>
         </div>
-        <!-- /.col -->
-      </div>
+        </div>
     </form>
 
     <a href="{{ route('login') }}" class="text-center">I have registered already</a>
   </div>
-  <!-- /.form-box -->
-</div>
-<!-- /.register-box -->
+  </div>
 @endsection
 @section("page:scripts")
 <script>

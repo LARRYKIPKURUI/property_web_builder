@@ -2,13 +2,26 @@
 @section("title", "Admin Login")
 @section("page:class", "login-page")
 @section("content")
+
+<style>
+  body.login-page {
+    background-color: #f2f2f2 ;/* Sets the body background to white */
+  }
+  .login-box {
+    background-color:#ffffff ; /* Sets the form background to a light grey */
+    padding: 20px; /* Optional: adds some padding to the form box */
+  }
+</style>
+
 <div class="login-box">
   <div class="login-logo">
-   <a href="{{route('front.index')}}"><b>Admin</b> <br>Asis Real Estate  </a>
+    <a href="{{route('front.index')}}">
+      <img src="{{ asset('assets/client/images/logo.png') }}" alt="Asis Real Estate Logo" style="max-height: 100px; width: auto; display: block; margin: 0 auto;">
+    </a>
+    <h3 style="color: #666; text-align: center; margin-top: 16px;"> Login</h3>
   </div>
   <br>
   @include("partials.alerts")
-  <!-- /.login-logo -->
   <div class="login-box-body">
     <p class="login-box-msg">Sign in to start your session</p>
 
@@ -42,11 +55,9 @@
             </label>
           </div>
         </div>
-        <!-- /.col -->
         <div class="col-xs-4">
           <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
         </div>
-        <!-- /.col -->
       </div>
     </form>
 
@@ -54,9 +65,7 @@
     <a href="{{ route('register') }}" class="text-center">Register a new membership</a>
 
   </div>
-  <!-- /.login-box-body -->
 </div>
-<!-- /.login-box -->
 @endsection
 @section("page:scripts")
 

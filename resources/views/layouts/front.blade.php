@@ -25,11 +25,12 @@
 </head>
 
 <body>
-<!-- header -->
 <div class="header">
     <div class="container">
-        <div class="w3_agile_logo">
-            <h1><a href="{{route('front.index')}}"><span>A</span>sis <span>R</span>eal <span>E</span>state</a></h1>
+       <div class="w3_agile_logo">
+            <a href="{{route('front.index')}}">
+                <img src="{{ asset('assets/client/images/logo.png') }}" alt="Asis Real Estate Logo" style="max-height: 80px; width: auto; display: block;">
+            </a>
         </div>
         <div class="agile_header_social">
             <ul class="agileits_social_list">
@@ -52,9 +53,6 @@
         </div>
     </div>
 </div>
-<!-- header -->
-
-<!-- banner -->
 <div class="@yield("banner-class")">
     <div class="container">
         <nav class="navbar navbar-default">
@@ -66,7 +64,6 @@
                     <span class="icon-bar"></span>
                 </button>
             </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
                 <nav class="link-effect-12">
                     <?php if(!isset($active) || $active == null) $active = ""; ?>
@@ -94,13 +91,8 @@
         </nav>
     </div>
 </div>
-<!-- //banner -->
-
-
-
 @yield('content')
 
-<!-- footer -->
 <div class="newsletter">
     <div class="w3l_footer_pos">
         <p>© <?php echo date('Y'); ?> ASIS REAL ESTATE LTD All Rights Reserved </p>
@@ -114,15 +106,12 @@
 </div>
 {{--footer--}}
 
-<!-- Bootstrap 3.3.6 -->
 <script src="{{asset('assets/admin/bootstrap/js/bootstrap.min.js')}}"></script>
 <script type="text/javascript" src="{{asset('assets/front/js/jquery-ui.js')}}"></script>
 <script type="text/javascript" src="{{asset('assets/front/js/move-top.js')}}"></script>
 <script type="text/javascript" src="{{asset('assets/front/js/easing.js')}}"></script>
 
 @yield("page:scripts")
-
-
 
 </body>
 </html>
