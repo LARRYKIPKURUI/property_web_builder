@@ -30,6 +30,9 @@ Route::group(['namespace' => "Admin", "prefix" => "admin", "middleware" => ["aut
     Route::match(["GET", "POST"], "property/edit/{id}", "AdminPropertyController@edit")->name("admin.property.edit");
 
     //manage users
+    // ** IMPORTANT: The 'create' route MUST come before the 'show' route.
+    Route::get('users/create', 'AdminUserController@create')->name('admin.user.create'); // New Route for create page
+    Route::post('users', 'AdminUserController@store')->name('admin.user.store'); // New Route for form submission
     Route::get('users','AdminUserController@index')->name('admin.user.index');
     Route::get('users/{user}','AdminUserController@show')->name('admin.user.show');
     Route::post('users/delete','AdminUserController@remove')->name('admin.user.delete');
@@ -71,4 +74,3 @@ Route::group(['namespace' => "Admin", "prefix" => "admin", "middleware" => ["aut
 include "front.php";
 
 Auth::routes();
-
